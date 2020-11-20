@@ -1,0 +1,12 @@
+.blog-container{
+   width:80%;
+   height:500px;
+   margin:20px auto;
+   border-left:10px solid #222733;
+   border-right:10px solid #222733;
+   border-top:10px solid #222733;
+   border-bottom:10px solid transparent;
+}
+.post-blogs p{
+   font-size:25px
+}

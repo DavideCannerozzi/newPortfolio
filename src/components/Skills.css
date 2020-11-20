@@ -1,0 +1,23 @@
+.container-skills{
+   width:90%;
+   height:60vh;
+   margin:0px auto;
+   border-left:10px solid #222733;
+   border-right:10px solid  #222733;
+   border-top:10px solid transparent;
+   border-bottom:10px solid transparent;
+}
+
+/***** Icons *****/ 
+.fa-bootstrap{ color:#553a7d }
+.fa-html5{ color:#e54c21 }
+.fa-css3-alt{ color:#264de4 }
+.fa-js-square{ color:#f0db4f }
+.fa-react{ color:#00d8ff }
+.fa-vuejs{ color: #41B883 }
+.fa-wordpress{ color:#207196 }
+.fa-sass{ color: #C76494 }
+
+.grid{
+   border:1px solid red
+}

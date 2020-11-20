@@ -1,0 +1,22 @@
+.navbar{
+   background:#2E3346;
+   padding:1rem
+}
+
+li{ 
+   list-style-type: none;
+   margin-right:30px;
+   font-family: 'Josefin sans';
+}
+ul{
+   display:flex;
+   justify-content: center;
+}
+
+a:hover{
+   border-bottom:1px solid #1fd88e;
+   margin-bottom:-1px
+}
+.active{
+   color:#1fd88e
+}

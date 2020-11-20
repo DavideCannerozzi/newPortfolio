@@ -1,0 +1,60 @@
+header{
+   background-color:#222733;
+   background:linear-gradient(#222733,#1D5066);
+   height:100vh;
+}
+.container-home{
+   width:80%;
+   height:70vh;
+   margin:0px auto;
+   border-left:10px solid transparent;
+   border-right:10px solid white;
+   border-top:10px solid transparent;
+   border-bottom:10px solid white
+}
+.content-home button{
+   margin-top:20px;
+   border:1px solid #26B97B;
+
+}
+.content-home{
+   width:70%;
+   margin:60px auto;
+
+}
+.content-home p{
+   margin-top:40px;
+}
+.builtin{
+   color:white;
+   position:absolute;
+   bottom:20%;
+   left:10%
+}
+
+.job-fe{
+   animation: fadein 3s;
+}
+
+@keyframes fadein{
+   from { opacity:0 }
+   to { opacity:1 }
+}
+
+.job-freelance{
+   animation:fadein01 6s;
+}
+
+@keyframes fadein01{
+   from { opacity:0 }
+   to { opacity: 1}
+}
+
+.job-react{
+   animation:fadein02 9s;
+}
+
+@keyframes fadein02{
+   from { opacity: 0 }
+   to { opacity: 1}
+}
