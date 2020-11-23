@@ -2,6 +2,16 @@ import React from 'react'
 import devImage from '../images/01.png'
 
 export default function Cards(props) {
+   const images = [
+   {
+      src:'../images/01.png',
+      alt:'01',
+      key:1
+   },
+   {
+      
+   }
+]
    return (
       <div>
             <div class="max-w-sm rounded overflow-hidden shadow-lg mt-10">

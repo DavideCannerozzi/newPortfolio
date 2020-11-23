@@ -28,7 +28,7 @@ function App() {
             <Route exact path="/" render={ () => <Home 
               heading="Ciao, my name is "
               name="Davide Cannerozzi" 
-              firstJob="A Front-end Developer"
+              firstJob="Front-end Developer"
               secondJob="Freelance"
               thirdJob="React Developer" 
               />} 
