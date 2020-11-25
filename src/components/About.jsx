@@ -16,8 +16,7 @@ export default function About(props) {
                <div className="image">
                <img className="profile-picture" src={profilePicture} alt="profile-pic" />
                </div>
-                 
-            </div> 
+         </div> 
 
          </div>
       </section>

@@ -1,49 +1,40 @@
 import React from 'react'
 import './Skills.css'
+import { IconContext } from 'react-icons'
+import { FaHtml5,FaCss3Alt,FaReact,FaVuejs,FaGitSquare,FaPython } from 'react-icons/fa'
+import { SiJavascript } from 'react-icons/si'
 import Bar from './Bar'
 import Cards from './Cards'
 
 export default function Skills(props) {
    return (
+      <IconContext.Provider value={{ size:'5em', style: { margin:'0 auto'}}}>
       <div>
          <h2 className="text-center text-2xl py-6">{props.header}</h2>
-         <div className="container-skills">
-            <div>
-               <ul className="grid grid-cols-3 text-center">
-                  <li><i class="fab fa-5x fa-html5"></i>
-                     <p>HTML</p>
-                  </li>
-                  <li><i class="fab fa-5x fa-css3-alt"></i>
-                     <p>CSS</p>
-                  </li>
-                  <li><i class="fab fa-5x fa-js-square"></i>
-                     <p>Javascript</p>
-                  </li>
-               </ul>
+            <div className="container-skills">
+            <div className="grid grid-cols-3 justify-center">
+               <FaCss3Alt className="move-left" color="#264de4"/>
+               <FaHtml5 color="#e54c21"/>
+               <SiJavascript className="move-right" color="#f0db4f"/>
             </div>
-            <div>
-               <ul className="grid grid-cols-4 mt-5 text-center">
-                  <li><i class="fab fa-5x fa-react"></i></li>
-                  <li><i class="fab fa-5x fa-vuejs"></i></li>
-                  <li><i class="fab fa-5x fa-python"></i></li>
-                  <li><i class="fab fa-5x fa-wordpress"></i></li>
-               </ul>
+            <div className="grid grid-cols-2">
+               <FaReact className="fadein" color="#00d8ff"/>
+               <FaVuejs className="fadein" color="#41B883"/>
             </div>
-            <div>
-               <ul className="grid grid-cols-2 mt-5 text-center">
-                  <li><i class="fab fa-5x fa-bootstrap"></i></li>
-                  <li><i class="fab fa-5x fa-sass"></i></li>
-               </ul>
+            <div className="grid grid-cols-2">
+               <FaGitSquare className="move-left" color="#EB4D28"/>
+               <FaPython className="move-right"/>
             </div>
             <Bar />
-            <h2 className="mt-5 text-center">{props.subHeader}</h2>
+               <h2 className="mt-5 text-center">{props.subHeader}</h2>
             <div className="cards-container grid grid-cols-3">
-               <Cards title="Web Development" />
-               <Cards title="Responsive Website"/>
-               <Cards title="Optimization"/>
-               <Cards title="Wordpress" />
+                  <Cards title="Web Development" />
+                  <Cards title="Responsive Website"/>
+                  <Cards title="Optimization"/>
+                  <Cards title="Wordpress" />
             </div>
-         </div>
+            </div>
       </div>
+      </IconContext.Provider>
    )
 }
