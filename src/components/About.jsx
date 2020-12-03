@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import SocialIcons from './SocialIcons'
-import profilePicture from '../images/davide.jpg'
+
 
 export default function About(props) {
    return (
@@ -14,7 +14,7 @@ export default function About(props) {
                <SocialIcons title="Looking for a developer?" subtitle="Email me at:" />
               </div>
                <div className="image">
-               <img className="profile-picture" src={profilePicture} alt="profile-pic" />
+               <img className="profile-picture" alt="profile-pic" />
                </div>
          </div> 
 

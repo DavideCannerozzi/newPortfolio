@@ -39,7 +39,7 @@ function App() {
             />
             <Route path='/Skills' render={ () => <Skills 
               header="Skills" 
-              subHeader="What Can I Offer"/>}
+              subHeader="What I Can Offer"/>}
             />
             <Route path='/Projects' component={Projects} />
             <Route path='/Blog' component={ () => <Blog header="From My Blog" description="Lorem Ipsum"/>} 

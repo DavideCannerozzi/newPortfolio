@@ -1,8 +1,30 @@
-.fa-github-square{ color:#313030 }
-.fa-envelope{ color:#ff0000 }
-.fa-twitter-square{ color:#1DA1F2 }
-
 .social-title{
-   font-size:25px;
-   color:#26B97B
+   font-size:35px;
+   color:#26B97B;
 }
+
+.twitter{ animation:swing 2s infinite ease-in-out }
+.linkedin{ animation:jump 2s infinite }
+.github{ animation:rotation 4s infinite linear }
+.twitter:hover,
+.linkedin:hover,
+.github:hover{ animation-play-state: paused }
+
+/************ Animation Icons **************/
+
+@keyframes swing{
+   50%{ transform:rotate(15deg) translateY(-15%) }
+}
+
+@keyframes rotation{
+   from { transform: rotate(0deg) }
+    to { transform: rotate(359deg) }
+}
+
+@keyframes jump{
+   0% { transform: translate(0%, 0%) scale(1, 0.75); }
+   50% { transform: translate(0%, -20%) scale(1, 1.25); }
+   100% { transform: translate(0%, 0%) scale(1, 0.75); }
+}
+
+

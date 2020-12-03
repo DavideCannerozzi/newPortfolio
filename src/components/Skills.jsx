@@ -6,6 +6,7 @@ import { SiJavascript } from 'react-icons/si'
 import Bar from './Bar'
 import Cards from './Cards'
 
+
 export default function Skills(props) {
    return (
       <IconContext.Provider value={{ size:'5em', style: { margin:'0 auto'}}}>
@@ -28,7 +29,7 @@ export default function Skills(props) {
             <Bar />
                <h2 className="mt-5 text-center">{props.subHeader}</h2>
             <div className="cards-container grid grid-cols-3">
-                  <Cards title="Web Development" />
+                  <Cards title="Web Development"/>
                   <Cards title="Responsive Website"/>
                   <Cards title="Optimization"/>
                   <Cards title="Wordpress" />

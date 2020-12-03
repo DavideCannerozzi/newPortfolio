@@ -10,7 +10,9 @@ export default function Blog(props) {
    }
    return (
       <div className=" text-center blog-container">
-         <h2 className="text-2xl py-6">{props.header}</h2>
+         <div className="header-blog">
+            <h2 className="text-2xl">{props.header}</h2>
+         </div>
          <p>{props.description}</p>
          <BlogPosts title="CSS3 | Flexbox" description="How To Center A DIV With Flexbox" link={links.one}/>
          <Bar />
