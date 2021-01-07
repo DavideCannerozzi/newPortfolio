@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function blogPosts(props) {
+export default function SinglePost(props) {
    return (
       <div>
          <div className="post-blogs text-center mt-5">

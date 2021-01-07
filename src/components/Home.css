@@ -1,4 +1,4 @@
-header{
+main{
    background-color:#222733;
    background:linear-gradient(#222733,#1D5066);
    height:100vh;
@@ -6,24 +6,16 @@ header{
 .container-home{
    width:80%;
    height:70vh;
-   margin:0px auto;
    border-left:10px solid transparent;
    border-right:10px solid white;
    border-top:10px solid transparent;
    border-bottom:10px solid white
 }
-.content-home button{
-   margin-top:20px;
-   border:1px solid #26B97B;
 
-}
 .content-home{
    width:70%;
    margin:60px auto;
 
-}
-.content-home p{
-   margin-top:40px;
 }
 .builtin{
    color:white;

@@ -1,18 +1,14 @@
 import React from 'react';
 import { Route, useLocation, Switch } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
-import Navigation from './components/Navigation'
+import NavBar from './components/NavBar'
 import Home from './components/Home'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Blog from './components/Blog'
 
-
-
-
-function App() {
-  
+export default function App() {
   const location = useLocation()
   const transition = useTransition(location,location.pathname, {
     from:{opacity:0, transform:"translate(100%,0)"},
@@ -21,7 +17,7 @@ function App() {
   })
   return (
     <div className="App">
-       <Navigation /> 
+       <NavBar /> 
        { transition.map(({item:location,props,key}) => (
           <animated.div key={key} style={props}>
             <Switch location={location}>
@@ -31,18 +27,26 @@ function App() {
               firstJob="Front-end Developer"
               secondJob="Freelance"
               thirdJob="React Developer" 
-              />} 
+              />
+            } 
             />
             <Route path='/About' render={ () => <About 
-              title="About Page" 
-              aboutMe="Ciao, I am Davide Cannerozzi, a front-end developer get efficitur orci. Phasellus lacinia mauris turpis, sed vehicula felis accumsan lobortis. Sed eu feugiat purus. Nunc cursus neque ut orci placerat volutpat. Suspendisse potenti. Integer blandit mauris eget consectetur pretium" />}
+              title="About Davide" 
+              aboutMe="Ciao, I am Davide Cannerozzi, a front-end developer get efficitur orci. Phasellus lacinia mauris turpis, sed vehicula felis accumsan lobortis. Sed eu feugiat purus. Nunc cursus neque ut orci placerat volutpat. Suspendisse potenti. Integer blandit mauris eget consectetur pretium" />
+            }
             />
             <Route path='/Skills' render={ () => <Skills 
               header="Skills" 
-              subHeader="What I Can Offer"/>}
+              subHeader="What I Can Offer"/>
+            }
             />
-            <Route path='/Projects' component={Projects} />
-            <Route path='/Blog' component={ () => <Blog header="From My Blog" description="Lorem Ipsum"/>} 
+            <Route path='/Projects' component={ () => <Projects 
+              header="Projects"
+            />} />
+            <Route path='/Blog' component={ () => <Blog 
+              header="From My Blog" 
+              description="Lorem Ipsum"/>
+            } 
             />
           </Switch>
           </animated.div> 
@@ -51,4 +55,3 @@ function App() {
   );
 }
 
-export default App;

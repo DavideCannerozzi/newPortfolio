@@ -1,23 +1,26 @@
 import React from 'react'
 import './About.css'
 import SocialIcons from './SocialIcons'
+import ProfilePicture from '../images/profile-picture.jpg'
 
 
 export default function About(props) {
    return (
       <section>
-         <h2 className="text-center text-2xl py-6">{props.title}</h2>
+         <h2 className="text-center text-2xl p-1">{props.title}</h2>
          <div className="about-container">
             <div className="grid grid-cols-3">
                <div className="description col-span-2 p-12">
-               <p>{props.aboutMe }</p>
-               <SocialIcons title="Looking for a developer?" subtitle="Email me at:" />
+                  <p>{props.aboutMe }</p>
+                  <SocialIcons 
+                     subTitle="Looking for a developer?" 
+                     contact="Email me at:"
+                  />
               </div>
-               <div className="image">
-               <img className="profile-picture" alt="profile-pic" />
-               </div>
-         </div> 
-
+              <div className="mt-12">
+               <img src={ProfilePicture} className="h-50 w-50 rounded-full" alt="img-davide" />
+              </div>
+            </div> 
          </div>
       </section>
    )
