@@ -2,13 +2,14 @@ import React from 'react'
 import './About.css'
 import SocialIcons from './SocialIcons'
 import ProfilePicture from '../images/profile-picture.jpg'
-
+import { GiDonkey } from 'react-icons/gi'
 
 export default function About(props) {
    return (
       <section>
-         <h2 className="text-center text-2xl p-1">{props.title}</h2>
+         <h2 className="text-center text-4xl p-2">{props.title}</h2>
          <div className="about-container">
+            <GiDonkey className="aDonkey" size="3em" />
             <div className="grid grid-cols-3">
                <div className="description col-span-2 p-12">
                   <p>{props.aboutMe }</p>

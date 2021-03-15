@@ -11,42 +11,43 @@ main{
    border-top:10px solid transparent;
    border-bottom:10px solid white
 }
-
 .content-home{
    width:70%;
    margin:60px auto;
-
 }
-.builtin{
-   color:white;
+.info{
    position:absolute;
    bottom:20%;
    left:10%
 }
+.aBulldog{ 
+   width:100px;
+   position:relative;
+   top:-30px;
+   left:-80px;
+ }
 
-.job-fe{
-   animation: fadein 3s;
-}
+.titleOne{ animation: fadein 3s }
 
 @keyframes fadein{
    from { opacity:0 }
    to { opacity:1 }
 }
 
-.job-freelance{
-   animation:fadein01 6s;
-}
+.titleTwo{ animation:fadein01 6s }
 
 @keyframes fadein01{
    from { opacity:0 }
    to { opacity: 1}
 }
 
-.job-react{
-   animation:fadein02 9s;
-}
+.titleThree{ animation:fadein02 9s }
 
 @keyframes fadein02{
    from { opacity: 0 }
    to { opacity: 1}
 }
+
+
+/******** Media Queries ********/
+

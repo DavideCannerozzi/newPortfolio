@@ -2,13 +2,10 @@ import React from 'react'
 
 export default function SinglePost(props) {
    return (
-      <div>
          <div className="post-blogs text-center mt-5">
-            <h3>{props.title}</h3>
-            <p className="mt-2">{props.description}</p>
-            <button className="text-sm py-2 px-6 mt-4"><a href={props.link}>Read The Article</a></button>
+            <img className="logo-img" src={props.image} alt=""/>
+            <p className="mt-4 text-lg">{props.description}</p>
+            <button className="text-sm py-2 px-6 mt-4"><a href={props.link} target="_blank" rel="noopener noreferrer">Read The Article</a></button>
          </div>
-        
-      </div>
    )
 }

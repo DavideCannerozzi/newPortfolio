@@ -7,6 +7,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Blog from './components/Blog'
+import bulldogImage from './images/bulldog.png'
 
 export default function App() {
   const location = useLocation()
@@ -22,17 +23,19 @@ export default function App() {
           <animated.div key={key} style={props}>
             <Switch location={location}>
             <Route exact path="/" render={ () => <Home 
-              heading="Ciao, my name is "
-              name="Davide Cannerozzi" 
-              firstJob="Front-end Developer"
-              secondJob="Freelance"
-              thirdJob="React Developer" 
+              presentation="Ciao, my name is "
+              name="davide cannerozzi" 
+              titleOne="Front-end Developer"
+              titleTwo="Freelance"
+              titleThree="React Developer" 
+              image={bulldogImage}
+              info="Built with React.js + TailwindCSS"
               />
             } 
             />
             <Route path='/About' render={ () => <About 
               title="About Davide" 
-              aboutMe="Ciao, I am Davide Cannerozzi, a front-end developer get efficitur orci. Phasellus lacinia mauris turpis, sed vehicula felis accumsan lobortis. Sed eu feugiat purus. Nunc cursus neque ut orci placerat volutpat. Suspendisse potenti. Integer blandit mauris eget consectetur pretium" />
+              aboutMe="Ciao, I am Davide Cannerozzi, a front-end developer get efficitur orci. Phasellus lacinia mauris turpis, sed vehicula felis accumsan lobortis. Sed eu feugiat purus. Nunc cursus neque ut orci placerat volutpat. Suspendisse potenti. Integer blandit mauris eget consectetur pretium"/>
             }
             />
             <Route path='/Skills' render={ () => <Skills 
@@ -42,10 +45,10 @@ export default function App() {
             />
             <Route path='/Projects' component={ () => <Projects 
               header="Projects"
+              subHeader="Project for my clients,.... If you want to see more project that are not listed here check my Github"
             />} />
             <Route path='/Blog' component={ () => <Blog 
-              header="From My Blog" 
-              description="Lorem Ipsum"/>
+              header="From My Blog" />
             } 
             />
           </Switch>

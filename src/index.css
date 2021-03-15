@@ -3,22 +3,22 @@
   padding:0;
   box-sizing: border-box;
 }
-
 a{
   color:white;
   text-decoration: none;
   font-size:1rem
 }
-h2{
+h2
+{
   color:#1fd88e;
-  font-size:45px!important
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-button{ border: 1px solid #26B97B}
+button{ border: 1px solid #26B97B }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

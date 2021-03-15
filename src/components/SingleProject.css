@@ -1,12 +1,24 @@
 .image-project{
-   width:50%
+   width:60%
 }
 
 .project-container{
    margin-top:30px;
-   padding:20px
+   padding:20px;
+   height:500px;
 }
 
 .project-container-content{
-   text-align:center
+   text-align:center;
+   width:40%;
+   height:300px;
+   border-top:1px solid #2E3346;
+   border-left:1px solid #2E3346;
+   align-self: center;
+   box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(22, 22, 22, 0.3) 10px 10px, rgba(80, 74, 78, 0.2) 15px 15px, rgba(141, 119, 133, 0.1) 20px 20px, rgba(221, 211, 217, 0.05) 25px 25px;
+}
+
+.logo-img{
+   width:40%;
+   margin:10px auto
 }

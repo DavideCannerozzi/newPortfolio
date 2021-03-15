@@ -1,7 +1,4 @@
-.social-title{
-   font-size:28px;
-   color:#26B97B;
-}
+.social-title{ color:#26B97B }
 
 .twitter{ animation:swing 2s infinite ease-in-out }
 .linkedin{ animation:jump 2s infinite }

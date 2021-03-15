@@ -8,31 +8,16 @@
    border-bottom:10px solid transparent;
 }
 
-/****************** Animation Icons ******************/
+.html-logo{
+   border:2px solid red;
+   animation-name:test;
+   animation-duration: 3s;
+   animation-iteration-count: 1;
+   position:relative
+}
 
-.move-left{
-   position:relative;
-   animation:left 2s;
-   animation-fill-mode: forwards
-
-}
-.move-right{
-   position:relative;
-   animation:right 2s;
-   animation-fill-mode: forwards
-}
-.fadein{ animation:fade-in ease 6s }
-
-@keyframes left{
-   0% {left:-500px }
-   100%{ left: 100px }
-}
-@keyframes right{
-   0% {right:-500px}
-   100%{right:100px}
-}
-@keyframes fade-in{
-   0% { opacity:0 }
-   100% { opacity: 1;}
+@keyframes test{
+   0% { left:-500px }
+   100%{ left: 200px }
 }
 

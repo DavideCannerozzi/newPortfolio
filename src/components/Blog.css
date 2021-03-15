@@ -10,14 +10,9 @@
 .header-blog{
    width:300px;
    height:80px;
-   margin:20px auto;
+   margin:20px auto
 }
-.post-blogs p{
-   font-size:25px
-}
-.header-blog h2{
-   position:relative;
-}
+.header-blog h2{ position:relative }
 
 .header-blog h2::before{
    content:'';
