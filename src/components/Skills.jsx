@@ -12,20 +12,20 @@ import Cards from './Cards'
 
 export default function Skills(props) {
    return (
-      <IconContext.Provider value={{ size:'6em', style: { margin:'0 auto'}}}>
+      <IconContext.Provider value={{ size:'6em', style: { margin:'0 auto'} }}>
       <div>
          <h2 className="text-center text-4xl p-2">{props.header}</h2>
             <div className="container-skills">
-             <div className="grid grid-cols-3 py-4 justify-center">
-               <FaHtml5 className="html-logo" color="#e54c21"/>
+             <div className="grid sm:grid-cols-3 grid-cols-2 py-4 justify-center">
+               <FaHtml5 color="#e54c21"/>
                <FaCss3Alt color="#264de4"/>
                <SiJavascript color="#f0db4f"/>
             </div>
-            <div className="grid grid-cols-2 py-4">
+            <div className="grid sm:grid-cols-2 py-4">
                <FaReact color="#00d8ff"/>
                <FaVuejs color="#41B883"/>
             </div>
-            <div className="grid grid-cols-3 py-4">
+            <div className="grid sm:grid-cols-3 grid-cols-2 py-4">
                <FaPython />
                <FaGitSquare color="#EB4D28" />
                <FaWordpress color="#21759B"/>

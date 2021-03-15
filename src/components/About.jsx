@@ -10,7 +10,7 @@ export default function About(props) {
          <h2 className="text-center text-4xl p-2">{props.title}</h2>
          <div className="about-container">
             <GiDonkey className="aDonkey" size="3em" />
-            <div className="grid grid-cols-3">
+            <div className="grid sm:grid-cols-3 grid-cols">
                <div className="description col-span-2 p-12">
                   <p>{props.aboutMe }</p>
                   <SocialIcons 
@@ -19,7 +19,7 @@ export default function About(props) {
                   />
               </div>
               <div className="mt-12">
-               <img src={ProfilePicture} className="h-50 w-50 rounded-full" alt="img-davide" />
+               <img src={ProfilePicture} className="h-50 w-50 rounded-full shadow-xl" alt="img-davide" />
               </div>
             </div> 
          </div>

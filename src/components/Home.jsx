@@ -6,7 +6,7 @@ export default function Home(props) {
    return (
       <main>
          <div className="container-home mx-auto">
-            <div className="content-home capitalize text-white">
+            <div className="content-home mt-20 mx-auto capitalize text-white">
                <h2 className="text-5xl">{props.presentation}</h2>
                <h1 className="text-6xl font-bold">{props.name}</h1>
                <Bar />

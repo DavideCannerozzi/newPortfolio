@@ -1,13 +1,10 @@
 .navbar{ background:#2E3346 }
-
-li{ 
-   font-family: 'Josefin sans';
-}
-
+.navbar > ul > li{ font-family: 'Josefin sans' }
+.active{ color:#1fd88e }
 a:hover{
    border-bottom:1px solid #1fd88e;
    margin-bottom:-1px
 }
- .active{ color:#1fd88e }
+
    
 

@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md'
 export default function SocialIcons(props) {
    return (
       <div>
-          <h3 className="social-title text-2xl underline mt-6 italic">{ props.subTitle }</h3>
+          <h3 className="social-title text-2xl underline mt-6 italic sm:text-left text-center">{ props.subTitle }</h3>
           <p className="mt-5">{props.contact}</p>
           <MdEmail size="1.5rem" color="red" />
           <a className="underline" href="mailto:d.cannerozzi@gmail.com">d.cannerozzi@gmail.com</a>
