@@ -1,10 +1,9 @@
 import React from 'react'
-import './Bar.css'
 
 export default function Bar() {
    return (
       <>
-         <hr className="bar-div" />
+         <hr className="mt-12 mx-auto border-2 border-solid w-1/6 bg-green-500 border-green-600" />
       </>
    )
 }
