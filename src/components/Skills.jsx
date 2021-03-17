@@ -11,17 +11,20 @@ import Bar from './Bar'
 import Cards from './Cards'
 
 export default function Skills(props) {
+
+   
+
    return (
-      <IconContext.Provider value={{ size:'6em', style: { margin:'0 auto'} }}>
-      <div>
+      <IconContext.Provider value={{ size:'6em', style:{ margin:'0 auto'}}}>
+      <div className="absolute w-full">
          <h2 className="text-center text-4xl p-2">{props.header}</h2>
             <div className="container-skills">
-             <div className="grid sm:grid-cols-3 grid-cols-2 py-4 justify-center">
+             <div className="grid sm:grid-cols-3 grid-cols-2 sm:py-4 py-0 justify-center">
                <FaHtml5 color="#e54c21"/>
                <FaCss3Alt color="#264de4"/>
                <SiJavascript color="#f0db4f"/>
             </div>
-            <div className="grid sm:grid-cols-2 py-4">
+            <div className="grid grid-cols-2 py-4">
                <FaReact color="#00d8ff"/>
                <FaVuejs color="#41B883"/>
             </div>
@@ -32,7 +35,7 @@ export default function Skills(props) {
            </div> 
             <Bar />
             <h2 className="mt-16 text-4xl text-center">{props.subHeader}</h2>
-            <div className="cards-container grid grid-cols-3">
+            <div className="cards-container grid sm:grid-cols-3 grid-cols-1">
                   <Cards title="Web Development" image={DevImage} content="I can build website using modern...clean code and new technologies such as React and Vue"/>
                   <Cards title="Responsive Website" image={ResponsiveImage} content="I will make your website adapts easily to any screen size. Responsive design layout for all devices is a top priority"/>
                   <Cards title="Optimization" image={ResponsiveImage}/>

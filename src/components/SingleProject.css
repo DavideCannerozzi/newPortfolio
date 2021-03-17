@@ -1,6 +1,9 @@
 .project-description{
-   width:40%;
-   border-top:1px solid #2E3346;
-   border-left:1px solid #2E3346;
    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(22, 22, 22, 0.3) 10px 10px, rgba(80, 74, 78, 0.2) 15px 15px, rgba(141, 119, 133, 0.1) 20px 20px, rgba(221, 211, 217, 0.05) 25px 25px;
+}
+
+@media (max-width:768px){
+   .project-description{
+      box-shadow: 1px 1px 1px black;
+   }
 }

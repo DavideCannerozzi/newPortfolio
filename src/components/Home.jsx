@@ -4,7 +4,7 @@ import Bar from './Bar'
 
 export default function Home(props) {
    return (
-      <main>
+      <main className="absolute w-full">
          <div className="container-home mx-auto">
             <div className="content-home mt-20 mx-auto capitalize text-white">
                <h2 className="text-5xl">{props.presentation}</h2>

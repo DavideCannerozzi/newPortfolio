@@ -10,7 +10,7 @@ export default function Blog(props) {
    }
 
    return (
-      <article className=" text-center blog-container">
+      <article className=" text-center blog-container absolute w-full">
          <div className="header-blog">
             <h2 className="text-4xl p-2">{props.header}</h2>
          </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, useLocation, Switch } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
 import NavBar from './components/NavBar'
@@ -19,9 +18,9 @@ export default function App() {
   return (
     <div className="App">
        <NavBar /> 
-       { transition.map(({item:location,props,key}) => (
+       { transition.map(({item,props,key}) => (
           <animated.div key={key} style={props}>
-            <Switch location={location}>
+            <Switch location={item}>
             <Route exact path="/" render={ () => <Home 
               presentation="Ciao, my name is "
               name="davide cannerozzi" 
