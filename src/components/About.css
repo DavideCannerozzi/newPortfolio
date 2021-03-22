@@ -7,19 +7,3 @@
    border-top:8px solid #222733;
    border-bottom:10px solid transparent;
 }
-
-.aDonkey{
-   position:relative;
-   top:40px;
-   left:40px
-}
-
-
-@media (max-width:768px){
-   .aDonkey{
-      position:absolute;
-      top:10px;
-      left:10px
-   }
-}
-

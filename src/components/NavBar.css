@@ -10,7 +10,11 @@ a:hover{
    margin-bottom:-1px
 }
 
+.mobile-menu{ display:none }
 
-
-   
-
+@media (max-width:768px){
+   .mobile-menu{ 
+      display:block 
+   }
+   .navigation{ display:none }
+}

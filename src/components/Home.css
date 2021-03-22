@@ -1,7 +1,7 @@
 main{
    background-color:#222733;
    background:linear-gradient(#222733,#1D5066);
-   height:100vh;
+   height:calc(100vh - 10vh)
 }
 .container-home{
    width:80%;
@@ -16,13 +16,13 @@ main{
 }
 .info{
    position:absolute;
-   bottom:20%;
+   bottom:15%;
    left:10%
 }
 .aBulldog{ 
    width:100px;
    position:relative;
-   top:-50px;
+   top:-60px;
    left:-80px;
  }
 

@@ -38,7 +38,7 @@ export default function Skills(props) {
             <div className="cards-container grid sm:grid-cols-3 grid-cols-1">
                   <Cards title="Web Development" image={DevImage} content="I can build website using modern...clean code and new technologies such as React and Vue"/>
                   <Cards title="Responsive Website" image={ResponsiveImage} content="I will make your website adapts easily to any screen size. Responsive design layout for all devices is a top priority"/>
-                  <Cards title="Optimization" image={ResponsiveImage}/>
+                  <Cards title="Other Skills" image={ResponsiveImage}/>
                   <Cards title="Wordpress" image={WordpressImage}/>
                   <Cards title="Improving" image={ImprovingImage} content="Constantly continues to learn new technologies and keeping up-to-date with the freshest trends" />
                   <Cards title="SEO" image={ResponsiveImage} content="Seo Google" />

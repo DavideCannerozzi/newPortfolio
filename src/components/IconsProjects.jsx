@@ -2,14 +2,14 @@ import React from 'react'
 
 
 export default function IconsProject(){
+   
+   const Buttons =  [
+      { className:"rounded-md p-2 font-bold", href:"https://github.com/DavideCannerozzi", content:"View Code" },
+      { className:"rounded-md p-2 font-bold", href:"https://github.com/DavideCannerozzi", content:"View Live" }
+   ]
    return(
       <div className="mt-40 text-center"> 
-         <button className="rounded-md p-2 font-bold">
-            <a href="https://github.com/DavideCannerozzi">View Code</a>
-         </button>
-         <button className="rounded-md p-2 ml-12 font-bold">
-            <a href="https://github.com/DavideCannerozzi">View Live</a>
-         </button>
+         { Buttons.map( button =>( <a href={button.href} className={button.className}>{button.content}</a>))}
       </div>
    )
 }

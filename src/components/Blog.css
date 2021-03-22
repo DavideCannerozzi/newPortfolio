@@ -1,7 +1,7 @@
 .blog-container{
    width:80%;
    height:500px;
-   margin:20px auto;
+   margin:50px auto;
    border-left:10px solid #222733;
    border-right:10px solid #222733;
    border-top:10px solid #222733;
@@ -12,6 +12,7 @@
    height:80px;
    margin:20px auto
 }
+
 .header-blog h2{ position:relative }
 
 .header-blog h2::before{
