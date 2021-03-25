@@ -1,5 +1,10 @@
-.project-description{
-   box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(22, 22, 22, 0.3) 10px 10px, rgba(80, 74, 78, 0.2) 15px 15px, rgba(141, 119, 133, 0.1) 20px 20px, rgba(221, 211, 217, 0.05) 25px 25px;
+.project-description img{
+   border:10px solid pink;
+   width:50%
+}
+.project-description_p{
+   border:10px solid orange;
+   width:50%
 }
 
 @media (max-width:768px){

@@ -11,22 +11,22 @@ import bulldogImage from './images/bulldog.png'
 export default function App() {
   const location = useLocation()
   const transition = useTransition(location,location.pathname, {
-    from:{opacity:0, transform:"translate(100%,0)"},
-    enter:{opacity:1, transform:"translate(0%, 0)"},
-    leave:{opacity:0, transform:"translate(-50%,0)"}
+    from:{ opacity:0, transform:"translate(100%,0)" },
+    enter:{ opacity:1, transform:"translate(0%, 0)" },
+    leave:{ opacity:0, transform:"translate(-50%,0)" }
   })
   return (
     <div className="App">
        <NavBar /> 
-       { transition.map(({item,props,key}) => (
-          <animated.div key={key} style={props}>
-            <Switch location={item}>
+       { transition.map(({ item,props,key }) => (
+          <animated.div key={ key } style={ props }>
+            <Switch location={ item }>
             <Route exact path="/" render={ () => <Home 
               presentation="Ciao, my name is "
               name="davide cannerozzi" 
-              titleOne="Front-end Developer"
-              titleTwo="Freelance"
-              titleThree="React Developer" 
+              jobOne="Front-end Developer"
+              jobTwo="React Developer"
+              jobThree="Freelance" 
               image={bulldogImage}
               info="Built with React.js + TailwindCSS"
               />
@@ -47,7 +47,8 @@ export default function App() {
               subHeader="Project for my clients,.... If you want to see more project that are not listed here check my Github"
             />} />
             <Route path='/Blog' component={ () => <Blog 
-              header="From My Blog" />
+              header="From My Blog"
+              link="All Articles" />
             } 
             />
           </Switch>

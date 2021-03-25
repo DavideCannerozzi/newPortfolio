@@ -4,6 +4,7 @@ import { FaTwitter,FaGithub,FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
 export default function SocialIcons(props) {
+
    return (
       <div>
           <h3 className="social-title text-2xl underline mt-6 italic sm:text-left text-center">{ props.subTitle }</h3>
