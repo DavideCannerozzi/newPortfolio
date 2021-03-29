@@ -3,6 +3,11 @@
   padding:0;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 a{
   color:white;
   text-decoration: none;
@@ -10,20 +15,7 @@ a{
 }
 h2{ color:#1fd88e }
 h1,h2{ font-family:'Josefin sans' }
+p{ font-family: 'Yeseva One', cursive }
 
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 button{ border: 1px solid #26B97B }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-p{
-  font-family: 'Yeseva One', cursive;
-}

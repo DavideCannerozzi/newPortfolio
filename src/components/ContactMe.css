@@ -1,10 +1,25 @@
-.social-title{ color:#26B97B }
-.twitter{ animation:swing 2s infinite ease-in-out }
+.twitter{
+   color:#1DA1F2; 
+   animation:swing 2s infinite ease-in-out 
+}
 .linkedin{ animation:jump 2s infinite }
 .github{ animation:rotation 4s infinite linear }
 .twitter:hover,
 .linkedin:hover,
-.github:hover{ animation-play-state: paused }
+.github:hover{ 
+   animation-play-state: paused; 
+   cursor:pointer 
+}
+.contact-btn{
+   transition: all 0.8s ease 0s;
+  
+}
+.contact-btn:hover{ 
+   background:#2E3346; 
+   color:#2BB687;
+   text-decoration: none;
+
+}
 
 /************ Animation Icons **************/
 

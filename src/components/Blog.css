@@ -93,3 +93,11 @@
     
 }
 
+@media (max-width:768px){
+   .blog-container{
+      border-left:transparent;
+      border-right:transparent;
+      border-top:transparent
+   }
+}
+

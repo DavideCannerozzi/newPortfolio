@@ -1,6 +1,7 @@
 import React from 'react'
 import './Blog.css'
 import SinglePost from './singlePost'
+import ContactMe from './ContactMe'
 
 export default function Blog(props) {
    const articles = [
@@ -18,7 +19,10 @@ export default function Blog(props) {
          <article className="grid sm:grid-cols-2 grid-cols-1">
             { articles.map( article=> (<SinglePost category={article.category} description={article.description} link={article.link}/>))}
          </article>
-     
+         <div className="border-2 mt-10">
+            <h2>Got inspired? Did i Help you? You want to work with me? Contact me and Let's talk</h2>
+            <ContactMe />
+         </div>
       </div>
      </div> 
       

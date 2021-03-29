@@ -19,7 +19,7 @@
 .aBulldog{ 
    width:100px;
    position:relative;
-   top:-60px;
+   top:-80px;
    left:-80px;
  }
 
@@ -47,8 +47,8 @@
 @media (max-width:768px){
    .container-home{
       width:90%;
-      border-right:10px solid transparent;
-      border-bottom:10px solid transparent
+      border-right:transparent;
+      border-bottom:transparent
    }
    .aBulldog{
       position:absolute;

@@ -34,7 +34,11 @@ export default function App() {
             />
             <Route path='/About' render={ () => <About 
               title="About Davide" 
-              aboutMe="Ciao, I am Davide Cannerozzi, a front-end developer get efficitur orci. Phasellus lacinia mauris turpis, sed vehicula felis accumsan lobortis. Sed eu feugiat purus. Nunc cursus neque ut orci placerat volutpat. Suspendisse potenti. Integer blandit mauris eget consectetur pretium"/>
+              aboutMe="Ciao, I am Davide Cannerozzi, a front-end developer from Italy. My passion in web development started back in 2018.
+              I also write about programming on my blog.
+              Some of my passion:.
+              I Currently work as a freelance but I am always open for new opportunities. so don't hesitate to contact me!!. I am open to relocate"
+              lookingFor="Looking for a Developer?"/>
             }
             />
             <Route path='/Skills' render={ () => <Skills 

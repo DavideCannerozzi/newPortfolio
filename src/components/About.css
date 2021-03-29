@@ -7,3 +7,11 @@
    border-top:8px solid #222733;
    border-bottom:10px solid transparent;
 }
+
+@media (max-width:768px){
+   .about-container{
+      width:95%;
+      border-left:transparent;
+      border-top:transparent
+   }
+}

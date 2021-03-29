@@ -1,0 +1,9 @@
+.project-container{
+   width:90%;
+   height:100vh;
+   margin:50px auto;
+   border-left:10px solid transparent;
+   border-right:10px solid transparent;
+   border-top:10px solid #222733;
+   border-bottom:10px solid transparent;
+}
