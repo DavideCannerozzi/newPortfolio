@@ -33,12 +33,12 @@ export default function App() {
             } 
             />
             <Route path='/About' render={ () => <About 
-              title="About Davide" 
+              header="About Davide" 
               aboutMe="Ciao, I am Davide Cannerozzi, a front-end developer from Italy. My passion in web development started back in 2018.
               I also write about programming on my blog.
               Some of my passion:.
               I Currently work as a freelance but I am always open for new opportunities. so don't hesitate to contact me!!. I am open to relocate"
-              lookingFor="Looking for a Developer?"/>
+              subHeader="looking for a developer?"/>
             }
             />
             <Route path='/Skills' render={ () => <Skills 
@@ -48,7 +48,7 @@ export default function App() {
             />
             <Route path='/Projects' component={ () => <Projects 
               header="Projects"
-              subHeader="Project for my clients,.... If you want to see more project that are not listed here check my Github"
+              subHeader="Some Things I've Built"
             />} />
             <Route path='/Blog' component={ () => <Blog 
               header="From My Blog"

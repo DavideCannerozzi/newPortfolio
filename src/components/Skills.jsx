@@ -1,8 +1,5 @@
 import React from 'react'
 import './Skills.css'
-import { IconContext } from 'react-icons'
-import { FaHtml5,FaCss3Alt,FaReact,FaVuejs,FaGitSquare,FaPython,FaWordpress } from 'react-icons/fa'
-import { SiJavascript } from 'react-icons/si'
 import ImprovingImage from '../images/improving.png'
 import DevImage from '../images/dev.png'
 import ResponsiveImage from '../images/responsive-dev.png'
@@ -15,24 +12,43 @@ export default function Skills(props) {
    
 
    return (
-      <IconContext.Provider value={{ size:'6em', style:{ margin:'0 auto'}}}>
       <div className="absolute w-full">
          <h2 className="text-center text-4xl p-2">{props.header}</h2>
-            <div className="container-skills">
-             <div className="grid sm:grid-cols-3 grid-cols-2 sm:py-4 py-0 justify-center">
-               <FaHtml5 color="#e54c21"/>
-               <FaCss3Alt color="#264de4"/>
-               <SiJavascript color="#f0db4f"/>
-            </div>
-            <div className="grid grid-cols-2 py-4">
-               <FaReact color="#00d8ff"/>
-               <FaVuejs color="#41B883"/>
-            </div>
-            <div className="grid sm:grid-cols-3 grid-cols-2 py-4">
-               <FaPython />
-               <FaGitSquare color="#EB4D28" />
-               <FaWordpress color="#21759B"/>
-           </div> 
+            <div className="container-skills text-center">
+               <div className="grid grid-cols-2">
+                  <div className="skills-section border-2">
+                     <div className="grid grid-col-1">
+                     <i class="fab fa-4x fa-html5"></i>
+                     <div className="line"></div>
+                     </div>  
+                     <div className="grid grid-col-1 mt-10">
+                     <i class="fab fa-4x fa-css3-alt"></i>
+                     <div className="line"></div>
+                     </div>
+                     <div className="grid grid-col-1 mt-10">
+                     <i class="fab fa-4x fa-js-square"></i>
+                     </div>
+                     <div className="grid grid-cols-2 mt-10">
+                        <i class="fa-4x fab fa-react mr-24"></i>
+                        <i class="fa-4x fab fa-vuejs"></i>
+                     </div>
+                  </div>
+                  <div className="other-skills mt-10 py-10">
+                     <div className="grid grid-cols1 border-2">
+                        <h3>Other Skills</h3>
+                        <div className="flex justify-around mt-10">
+                           <i class="fab fa-3x fa-bootstrap"></i>
+                           <i class="fab fa-3x fa-wordpress"></i>
+                           <i class="fab fa-3x fa-git"></i>
+                           <i class="fab fa-3x fa-sass"></i>
+                           <i class="fab fa-3x fa-python"></i>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div> 
+             
+
             <Bar />
             <h2 className="mt-16 text-4xl text-center">{props.subHeader}</h2>
             <div className="cards-container grid sm:grid-cols-3 grid-cols-1">
@@ -45,6 +61,5 @@ export default function Skills(props) {
             </div>
             </div>
       </div>
-      </IconContext.Provider>
    )
 }

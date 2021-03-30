@@ -7,3 +7,56 @@
    border-top:10px solid transparent;
    border-bottom:10px solid transparent;
 }
+.fa-html5{ color:#dd4b25 }
+.fa-css3-alt{ color: #4DE4 }
+.fa-js-square{ color: #F7DF1E }
+.fa-react{ color: #61DAFB}
+.fa-vuejs{ color: #2E805B }
+
+
+.skills-section{
+   position:relative;
+   z-index:999;
+   background:lightcyan
+}
+
+.other-skills{
+   position:relative;
+   left:-550px;
+   z-index:-999;
+   animation-name: moveRight;
+   animation-duration:2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes moveRight{
+   0%  { left:-550px}
+   100% { left: 0px }
+}
+
+
+
+
+.line{
+   width:1px;
+   height:40px;
+   background:black;
+   position: relative;
+            top: 40px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.left{
+   display:inline-block;
+   position:relative;
+   top:80px;
+   left:-5%;
+   transform:translateX(-50%, -50%);
+   transform:rotate(20deg)
+}
+.right{
+   display:inline-block;
+   position:relative;
+   top:100px;
+   right:-200px;
+}

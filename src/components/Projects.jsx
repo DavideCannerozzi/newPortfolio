@@ -18,7 +18,7 @@ export default function Projects(props) {
    return (
       <div className="text-center absolute w-full">
          <h2 className="text-4xl p-2">{props.header}</h2>
-         <p>{props.subHeader}</p> 
+         <p className="text-2xl">{props.subHeader}</p> 
          <Bar />
          <div className="project-container">
            { Projects.map( project =>(<SingleProject image={project.image} title={project.title} content={project.content} skill={project.skills} alt={props.alt}/>)  )}
