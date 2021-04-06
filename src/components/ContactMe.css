@@ -10,14 +10,9 @@
    animation-play-state: paused; 
    cursor:pointer 
 }
-.contact-btn{
-   transition: all 0.8s ease 0s;
-  
-}
 .contact-btn:hover{ 
    background:#2E3346; 
    color:#2BB687;
-   text-decoration: none;
 
 }
 

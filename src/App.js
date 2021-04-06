@@ -26,7 +26,7 @@ export default function App() {
               name="davide cannerozzi" 
               jobOne="Front-end Developer"
               jobTwo="React Developer"
-              jobThree="Freelance" 
+              jobThree="Freelancer" 
               image={bulldogImage}
               info="Built with React.js + TailwindCSS"
               />

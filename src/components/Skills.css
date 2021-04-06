@@ -10,14 +10,41 @@
 .fa-html5{ color:#dd4b25 }
 .fa-css3-alt{ color: #4DE4 }
 .fa-js-square{ color: #F7DF1E }
-.fa-react{ color: #61DAFB}
-.fa-vuejs{ color: #2E805B }
+.fa-react{ color: #61DAFB; animation:rotating 5s linear infinite}
+.fa-vuejs{ color: #2E805B; transform:rotate(45deg)}
+.fa-bootstrap{ color:#7952B3 }
+.fa-git{ color:#E84D31 }
+.fa-sass{ color:#CE679A }
 
-
+@keyframes rotating {
+   from {
+     -ms-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     transform: rotate(0deg);
+   }
+   to {
+     -ms-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+     -o-transform: rotate(360deg);
+     transform: rotate(360deg);
+   }
+ }
 .skills-section{
    position:relative;
    z-index:999;
    background:lightcyan
+}
+
+.text-skill{
+   animation-name:fadeIn;
+   animation-duration:2s
+}
+@keyframes fadeIn{
+   from { opacity:0 }
+   to { opacity:1 }
 }
 
 .other-skills{
@@ -34,29 +61,13 @@
    100% { left: 0px }
 }
 
+.test-div{
+   animation:showMe 8s;
+}
+
+@keyframes showMe{
+   from{ opacity: 0 }
+   to { opacity: 1 }
+}
 
 
-
-.line{
-   width:1px;
-   height:40px;
-   background:black;
-   position: relative;
-            top: 40px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-}
-.left{
-   display:inline-block;
-   position:relative;
-   top:80px;
-   left:-5%;
-   transform:translateX(-50%, -50%);
-   transform:rotate(20deg)
-}
-.right{
-   display:inline-block;
-   position:relative;
-   top:100px;
-   right:-200px;
-}

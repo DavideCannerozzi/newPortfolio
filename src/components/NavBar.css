@@ -3,18 +3,8 @@
    font-family: 'Josefin sans';
    font-weight:bold
  }
-
 .active{ color:#1fd88e }
-a:hover{
+nav a:hover{
    border-bottom:1px solid #1fd88e;
    margin-bottom:-1px
-}
-
-.mobile-menu{ display:none }
-
-@media (max-width:768px){
-   .mobile-menu{ 
-      display:block 
-   }
-   .navigation{ display:none }
 }

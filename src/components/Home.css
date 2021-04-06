@@ -1,7 +1,6 @@
 .home-page{
    background-color:#222733;
    background:linear-gradient(#222733,#1D5066);
-   height:90vh
 }
 .container-home{
    width:80%;
@@ -10,11 +9,6 @@
    border-right:10px solid white;
    border-top:10px solid transparent;
    border-bottom:10px solid white
-}
-.info{
-   position:absolute;
-   bottom:15%;
-   left:10%
 }
 .aBulldog{ 
    width:100px;
@@ -54,10 +48,6 @@
       position:absolute;
       left:100px;
       top:200px
-   }
-   .info{
-      position:absolute;
-      bottom:100px
    }
 }
 

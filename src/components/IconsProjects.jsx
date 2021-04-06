@@ -5,7 +5,7 @@ export default function IconsProject(){
    
    const Buttons =  [
       { className:"rounded-md p-2 font-bold", href:"https://github.com/DavideCannerozzi", content:"View Code" },
-      { className:"rounded-md p-2 font-bold", href:"https://github.com/DavideCannerozzi", content:"View Live" }
+      { className:"rounded-md p-2 font-bold", href:"https://seteshop.it", content:"View Live" }
    ]
    return(
       <div className="text-center"> 

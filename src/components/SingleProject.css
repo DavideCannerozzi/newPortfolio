@@ -1,14 +1,17 @@
 .project-description_p{
-   border:10px solid orange;
+   border:1px solid #2E3346;
    height:200px;
-   width:40%;
+   width:100%
 }
+
 .project-img img{
-   height:300px
+   width:90%;
+   height:300px;
+
 }
 
 @media (max-width:768px){
-   .project-description{
-      box-shadow: 1px 1px 1px black;
+   .project-img img{
+      height:200px
    }
 }
