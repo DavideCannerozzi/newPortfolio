@@ -1,6 +1,7 @@
 .home-page{
    background-color:#222733;
    background:linear-gradient(#222733,#1D5066);
+   height:90vh
 }
 .container-home{
    width:80%;
