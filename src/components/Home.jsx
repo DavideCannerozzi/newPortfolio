@@ -17,7 +17,7 @@ export default function Home(props) {
                </div>
                <img className="aBulldog" src={props.image} alt=""/>
             </div>
-            <span className="info border-2 text-white text-sm italic">{props.info}</span>
+            <span className="info text-white text-sm italic">{props.info}</span>
          </div>
       </div>
    )

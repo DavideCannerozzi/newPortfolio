@@ -7,14 +7,32 @@
    border-top:10px solid transparent;
    border-bottom:10px solid transparent;
 }
-.fa-html5{ color:#dd4b25 }
-.fa-css3-alt{ color: #4DE4 }
-.fa-js-square{ color: #F7DF1E }
-.fa-react{ color: #61DAFB; animation:rotating 5s linear infinite}
+.fa-html5{ color:#dd4b25; position:relative; animation-name:htmlMove; animation-duration: 5s }
+.fa-css3-alt{ color: #4DE4; position:relative; animation-name:cssMove; animation-duration: 3s }
+.fa-js-square{ color: #F7DF1E; position:relative; animation-name:jsMove; animation-duration: 3s}
+.fa-react{ color: #61DAFB; animation:rotating 5s linear infinite  }
 .fa-vuejs{ color: #2E805B; transform:rotate(45deg)}
-.fa-bootstrap{ color:#7952B3 }
 .fa-git{ color:#E84D31 }
 .fa-sass{ color:#CE679A }
+.graphql{ color:pink }
+.bootstrap{ color: #7952B3 }
+.tailwind{ color: #06B6D4}
+.chrome{ color: #FED308 }
+.responsive-design{ color: rgb(134, 31, 31)}
+
+
+@keyframes htmlMove{
+   from{ left:-300px }
+   to{ left:0px }
+}
+@keyframes cssMove{
+   from{top:-500px}
+   to{ top:0px }
+}
+@keyframes jsMove{
+   from{ top:-500px}
+   to{ top:0px }
+}
 
 @keyframes rotating {
    from {
@@ -32,11 +50,6 @@
      transform: rotate(360deg);
    }
  }
-.skills-section{
-   position:relative;
-   z-index:999;
-   background:lightcyan
-}
 
 .text-skill{
    animation-name:fadeIn;

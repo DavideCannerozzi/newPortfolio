@@ -14,8 +14,9 @@ export default function Navigation() {
       { to:'/Blog', name:'Blog'}
    ]
    const styles = {
-      className:"mr-8",
-      activeClassName:"active"
+      className:"mr-8 block",
+      activeClassName:"active",
+
    }
 
    const [openMenu,SetOpenMenu] = useState(false)
