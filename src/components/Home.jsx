@@ -15,7 +15,7 @@ export default function Home(props) {
                   <span className="titleTwo"> | {props.jobTwo}</span>
                   <span className="titleThree"> | {props.jobThree}</span>
                </div>
-               <img className="aBulldog" src={props.image} alt=""/>
+               <img className="aBulldog" src={props.image} alt="bulldogPicture"/>
             </div>
             <span className="info text-white text-sm italic">{props.info}</span>
          </div>

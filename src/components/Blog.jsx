@@ -16,7 +16,7 @@ export default function Blog(props) {
          <div className="header-blog w-72 mx-auto mt-4 mb-2">
             <h2 className="text-4xl p-2 relative">{props.header}</h2>
          </div>
-         <a href="https://codingandbeers.com/" className="border-blue-500 rounded underline p-2">{props.link}</a>
+         <a href="https://codingandbeers.com/" className="underline block p-4">{props.link}</a>
          <article className="grid sm:grid-cols-2 grid-cols-1">
             { articles.map( article=> (<SinglePost category={article.category} description={article.description} link={article.link}/>))}
          </article>

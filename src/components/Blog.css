@@ -31,6 +31,8 @@
    animation-delay: 0.5s;
 }
 
+.vue{ color:green }
+
 /*** Animation Title Blog Page ***/
 
 @keyframes drawOne{
