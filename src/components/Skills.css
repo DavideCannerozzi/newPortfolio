@@ -1,86 +1,34 @@
 .container-skills{
    width:90%;
-   height:100vh;
+   height:85vh;
    margin:0px auto;
    border-left:10px solid #222733;
    border-right:10px solid  #222733;
    border-top:10px solid transparent;
    border-bottom:10px solid transparent;
 }
-.fa-html5{ color:#dd4b25; position:relative; animation-name:htmlMove; animation-duration: 5s }
-.fa-css3-alt{ color: #4DE4; position:relative; animation-name:cssMove; animation-duration: 3s }
-.fa-js-square{ color: #F7DF1E; position:relative; animation-name:jsMove; animation-duration: 3s}
-.fa-react{ color: #61DAFB; animation:rotating 5s linear infinite  }
-.fa-vuejs{ color: #2E805B; transform:rotate(45deg)}
-.fa-git{ color:#E84D31 }
-.fa-sass{ color:#CE679A }
-.graphql{ color:pink }
-.bootstrap{ color: #7952B3 }
-.tailwind{ color: #06B6D4}
-.chrome{ color: #FED308 }
-.responsive-design{ color: rgb(134, 31, 31)}
+.fa-html5{ color:#dd4b25 }
+.fa-css3-alt{ color:#264DE4 }
+.fa-js-square{ color: #F7DF1E }
+.fa-react{ color: #61DAFB }
+.fa-vuejs{ color: #2E805B }
 
-
-@keyframes htmlMove{
-   from{ left:-300px }
-   to{ left:0px }
+.main-skills,
+.lang-skills{ 
+   animation:fromRight 2s;
+   position:relative
 }
-@keyframes cssMove{
-   from{top:-500px}
-   to{ top:0px }
-}
-@keyframes jsMove{
-   from{ top:-500px}
-   to{ top:0px }
+.skills-secondary{
+   animation:fromLeft 2s;
+   position: relative;
 }
 
-@keyframes rotating {
-   from {
-     -ms-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -webkit-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     transform: rotate(0deg);
-   }
-   to {
-     -ms-transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
-     -webkit-transform: rotate(360deg);
-     -o-transform: rotate(360deg);
-     transform: rotate(360deg);
-   }
- }
-
-.text-skill{
-   animation-name:fadeIn;
-   animation-duration:2s
-}
-@keyframes fadeIn{
-   from { opacity:0 }
-   to { opacity:1 }
+@keyframes fromRight{
+   from {right: -400px }
+   to { right:0px }
 }
 
-.other-skills{
-   position:relative;
-   left:-550px;
-   z-index:-999;
-   animation-name: moveRight;
-   animation-duration:2s;
-   animation-fill-mode: forwards;
+@keyframes fromLeft{
+   from{ left:-400px }
+   to { left:0px }
 }
-
-@keyframes moveRight{
-   0%  { left:-550px}
-   100% { left: 0px }
-}
-
-.test-div{
-   animation:showMe 8s;
-}
-
-@keyframes showMe{
-   from{ opacity: 0 }
-   to { opacity: 1 }
-}
-
-
