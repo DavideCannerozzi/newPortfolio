@@ -4,10 +4,10 @@ import SinglePost from './singlePost'
 
 export default function Blog(props) {
    const articles = [
-      { category:"css", description:"how to center a div with flexbox", link:"" },
-      { category:"react", description:"set up a react project with create-react-app", link:"https://codingandbeers.com/create-react-app/"},
-      { category:"react", description:'The useState() Hook', link:"" },
-      { category:"Vue", description:'Lorem Ipsum', link:""}
+      { category:"css", description:"how to center a div with flexbox", link:"",icon:"fab fa-2x fa-css3-alt"},
+      { category:"react", description:"set up a react project with create-react-app", link:"https://codingandbeers.com/create-react-app/", icon:"fab fa-2x fa-react"},
+      { category:"react", description:'The useState() Hook', link:"",icon:"fab fa-2x fa-react" },
+      { category:"Vue", description:'Lorem Ipsum', link:"", icon:"fab fa-2x fa-vuejs"}
    ]
 
    return (
@@ -16,9 +16,9 @@ export default function Blog(props) {
          <div className="header-blog w-72 mx-auto mt-4 mb-2">
             <h2 className="text-4xl p-2 relative">{props.header}</h2>
          </div>
-         <a href="https://codingandbeers.com/" className="underline block p-4">{props.link}</a>
+         <a href="https://codingandbeers.com/" className="underline block p-4" target="_blank" rel="noreferrer">{props.link}</a>
          <article className="grid sm:grid-cols-2 grid-cols-1">
-            { articles.map( article=> (<SinglePost category={article.category} description={article.description} link={article.link}/>))}
+            { articles.map( article=> (<SinglePost category={article.category} description={article.description} link={article.link} icon={article.icon}/>))}
          </article>
       </div>
      </div> 

@@ -12,7 +12,7 @@ export default function LanguageSkillsSection(props){
    return(
       <div className="border-t-4 border-blue-900">
          <h1 class="text-2xl mb-4 mt-4 text-center">{ props.header }</h1>
-         <div className="flex flex-wrap lang-skills justify-center">
+         <div className="md:flex flex-wrap block lang-skills justify-center">
             { skills.map( skill => <><img src={ skill.icon } alt={ skill.alt }className={ skill.class } /><span>{ skill.name }</span><span>{ skill.level }</span> </>  )}
          </div>
       </div>
