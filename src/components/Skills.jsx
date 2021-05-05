@@ -8,11 +8,14 @@ import './Skills.css'
 export default function Skills(props) {
 
    return(
-      <div className="container-skills">
-         <h2 className="text-4xl text-center">{props.header}</h2>
-         <MainSkills />
-         <SecondarySkillsSection />
-         <LanguageSkillsSection header="Languages Spoken" />
+      <div className="absolute w-full">
+         <div className="container-skills">
+            <h2 className="text-center text-4xl p-2">{props.header}</h2>
+            <MainSkills />
+            <SecondarySkillsSection />
+            <LanguageSkillsSection header="Languages Spoken" />
+         </div>
       </div>
    )
+     
 }

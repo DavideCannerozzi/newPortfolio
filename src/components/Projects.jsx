@@ -18,15 +18,14 @@ export default function Projects(props) {
    return (
       <div className="text-center absolute w-full">
          <h2 className="text-4xl p-2">{props.header}</h2>
-         <p className="text-2xl">{props.subHeader}</p> 
-         <div className="mt-10">
+         <p>{props.subHeader}</p> 
+         <div className="mt-6">
             <a className="capitalize rounded-full border-2 py-2 px-6" href="https://github.com/DavideCannerozzi" target="_blank" rel="noreferrer"><i class="fab fa-github mr-2"></i>{props.btnGithub}</a>
          </div>
          <Bar />
          <div className="project-container p-8">
            { Projects.map( project =>(<SingleProject image={project.image} title={project.title} content={project.content} skill={project.skills} alt={props.alt}/>)  )}
          </div>
-        
       </div>
    )
 }

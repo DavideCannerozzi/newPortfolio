@@ -16,11 +16,11 @@ export default function SecondarySkillsSection(){
       { id:10, name:'Wordpress', class:'font-bold' }
    ]
    return(
-         <div className="skills-secondary p-4 border-t-4 border-blue-900 grid md:grid-cols-2 grid-cols-1 text-center">
-            <ul className="leading-8">
+         <div className="skills-secondary p-6 border-t-4 border-blue-900 grid md:grid-cols-2 grid-cols-1 text-center">
+            <ul className="leading-10">
                { skillsIconsLeft.map( skillIcon => (<li id={ skillIcon.id } className={ skillIcon.class }>{ skillIcon.name }</li>))}
             </ul>
-            <ul className="leading-8">
+            <ul className="leading-10">
                { skillsIconsRight.map( skillIcon => (<li id={ skillIcon.id } className={ skillIcon.class }>{ skillIcon.name }</li>))}
             </ul>
          </div>

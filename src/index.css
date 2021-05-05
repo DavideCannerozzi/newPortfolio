@@ -14,9 +14,11 @@ a{
   font-size:1rem
 }
 
-h2{ color:#1fd88e }
+h2,
+h3{ color:#1fd88e }
 h1,h2{ font-family:'Josefin sans' }
-p{ font-family: 'Yeseva One', cursive }
+p,
+li{ font-family: 'Yeseva One', cursive }
 
 button{ border: 1px solid #26B97B }
 

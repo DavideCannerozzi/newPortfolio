@@ -6,7 +6,7 @@ export default function SinglePost(props) {
             <i class={props.icon}></i>
             <p className="underline">{props.category}</p>
             <p className="mt-4 text-lg">{props.description}</p>
-            <button className="btn-blog transition duration-1000 text-sm py-2 px-6 mt-4"><a href={props.link} target="_blank" rel="noopener noreferrer">Read The Article</a></button>
+            <button className="btn-blog transition duration-500 text-sm py-2 px-6 mt-4"><a href={props.link} target="_blank" rel="noopener noreferrer">Read The Article</a></button>
          </div>
    )
 }

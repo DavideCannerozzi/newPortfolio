@@ -51,7 +51,7 @@ export default function App() {
             />} />
             <Route path='/Blog' component={ () => <Blog 
               header="From My Blog"
-              link="All Articles" />
+              link="Read All The Articles" />
             } 
             />
           </Switch>
