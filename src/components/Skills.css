@@ -1,6 +1,6 @@
 .container-skills{
    width:90%;
-   height:85vh;
+   height:90vh;
    margin:0px auto;
    border-left:10px solid #222733;
    border-right:10px solid  #222733;
@@ -31,4 +31,13 @@
 @keyframes fromLeft{
    from{ left:-400px }
    to { left:0px }
+}
+
+
+@media (max-width:768px){
+   .container-skills{
+      width:95%;
+      border-left:transparent;
+      border-right:transparent
+   }
 }

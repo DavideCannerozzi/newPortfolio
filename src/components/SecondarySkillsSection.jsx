@@ -6,12 +6,12 @@ export default function SecondarySkillsSection(){
       { id:2, name:'React Router', class:'font-bold' },
       { id:3, name:'Redux', class:'font-bold' },
       { id:4, name:'Sass', class:'font-bold' },
-      { id:5, name:'t', class:'font-bold' }
+      { id:5, name:'Responsive Design', class:'font-bold' }
    ]
    const skillsIconsRight = [
       { id:6, name:'TailwindCss', class:'font-bold' },
       { id:7, name:'Bootstrap', class:'font-bold' },
-      { id:8, name:'NPM', class:'font-bold' },
+      { id:8, name:'Git/Version Control', class:'font-bold' },
       { id:9, name:'Chrome Developer Tools', class:'font-bold' },
       { id:10, name:'Wordpress', class:'font-bold' }
    ]

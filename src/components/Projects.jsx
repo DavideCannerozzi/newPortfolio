@@ -2,17 +2,23 @@ import React from 'react'
 import SingleProject from './SingleProject'
 import './Project.css'
 import Bar from './Bar'
-import TemplateVue from '../images/template-vue.jpg'
 import MachwerkImg from '../images/machwerk-berlin.jpg'
 import SeteShopImg from '../images/sete-shop.jpg'
+import VueTemplateImg from '../images/vue-template.jpg'
+import WeatherAppImg from '../images/weather-app.jpg'
+import PongImg from '../images/pong-img.jpg'
+import ContactFormImg from '../images/contact-form.jpg'
 
 export default function Projects(props) {
 
    const Projects = [
-      { image:SeteShopImg, title:'SeteShop', content:'Website for a client, made using Wordpress and ecc. ecc.',skills:'Wordpress, CSS3, Javascript', alt:"seteShop"},
-      { image:MachwerkImg, title:'ToDoList App', content:'ciao', skills:'React.js, Tailwind.css, GraphQL,ContentfulCMS '},
-      { image:TemplateVue, title:'ToDoList App', content:'ciao"'},
-      { image:TemplateVue, title:'A Simple Photography Template'}
+      { image:SeteShopImg, title:'SeteShop', content:'SeteShop is an e-commerce website built for one of my client. ', alt:"seteShop"},
+      { image:MachwerkImg, title:'ToDoList App', content:'ciao', skills:'Machwerk Is A Website Built With React.js, Tailwind.css, GraphQL and ContentfulCMS '},
+      { image:VueTemplateImg, title:'A Template For Photographers', content:'A Simple And Clean Template For Photographers made with Vue.js and Vuetify'},
+      { image:PongImg, title:'Pong Game Python'},
+      { image:VueTemplateImg, title:'Jewlery Template'},
+      { image:ContactFormImg, title: 'Contact Form', content:'Contact form'},
+      { image:WeatherAppImg, title:'Weather App', content:"TEst", link:"https://weather-js-project.netlify.app/"}
    ]
    
    return (
@@ -24,7 +30,7 @@ export default function Projects(props) {
          </div>
          <Bar />
          <div className="project-container p-8">
-           { Projects.map( project =>(<SingleProject image={project.image} title={project.title} content={project.content} skill={project.skills} alt={props.alt}/>)  )}
+           { Projects.map( project =>(<SingleProject image={project.image} title={project.title} content={project.content} skill={project.skills} alt={props.alt} linkP={props.link}/> )  )}
          </div>
       </div>
    )
