@@ -1,0 +1,43 @@
+.container-skills{
+   width:90%;
+   height:90vh;
+   margin:0px auto;
+   border-left:10px solid #222733;
+   border-right:10px solid  #222733;
+   border-top:10px solid transparent;
+   border-bottom:10px solid transparent;
+}
+.fa-html5{ color:#dd4b25 }
+.fa-css3-alt{ color:#264DE4 }
+.fa-js-square{ color: #F7DF1E }
+.fa-react{ color: #61DAFB }
+.fa-vuejs{ color: #2E805B }
+
+.main-skills,
+.lang-skills{ 
+   animation:fromRight 2s;
+   position:relative
+}
+.skills-secondary{
+   animation:fromLeft 2s;
+   position: relative;
+}
+
+@keyframes fromRight{
+   from {right: -400px }
+   to { right:0px }
+}
+
+@keyframes fromLeft{
+   from{ left:-400px }
+   to { left:0px }
+}
+
+
+@media (max-width:768px){
+   .container-skills{
+      width:95%;
+      border-left:transparent;
+      border-right:transparent
+   }
+}
