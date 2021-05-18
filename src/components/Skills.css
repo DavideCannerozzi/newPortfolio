@@ -18,6 +18,7 @@
    animation:fromRight 2s;
    position:relative
 }
+.lang-skills img{ display:inline-block }
 .skills-secondary{
    animation:fromLeft 2s;
    position: relative;

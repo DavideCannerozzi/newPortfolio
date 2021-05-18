@@ -7,7 +7,7 @@ export default function Blog(props) {
       { category:"css", description:"how to center a div with flexbox", link:"https://codingandbeers.com/flexbox-center-a-div/",icon:"fab fa-2x fa-css3-alt"},
       { category:"react", description:"set up a react project with create-react-app", link:"https://codingandbeers.com/create-react-app/", icon:"fab fa-2x fa-react"},
       { category:"react", description:'The useState() Hook', link:"https://codingandbeers.com/usestate-hook-in-react/",icon:"fab fa-2x fa-react" },
-      { category:"React", description:'Lorem Ipsum', link:"https://codingandbeers.com/useeffect-hook/", icon:"fab fa-2x fa-react"}
+      { category:"React", description:'The useEffect() Hook', link:"https://codingandbeers.com/useeffect-hook/", icon:"fab fa-2x fa-react"}
    ]
 
    return (
