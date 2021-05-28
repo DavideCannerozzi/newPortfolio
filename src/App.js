@@ -44,9 +44,9 @@ export default function App() {
             />
             <Route path='/About' render={ () => <About 
               header="About Davide" 
-              aboutMe="Ciao, I am Davide Cannerozzi, a front-end developer from Italy. My passion for web development started back in 2018.
-              I also write about programming on my blog.
-              I am currently working as a freelance, but I am always open to new opportunities, so don't hesitate to contact me!!. I am open to relocate."
+              aboutMeFirst = "Ciao, I am Davide Cannerozzi, a front-end developer from Italy. My passion for web development started back in 2018. After starting with Wordpress I started studying Html Css Javascript. More than one year ago i started with React.js and Vue.js"
+              aboutMeSecond = "In March 2019 ..... , mainly React.js, while i was working for a company in Berlin,Germany. If you want to know more about it check out my Project page.I also write about programming on my blog"
+              aboutMeThird = "I am currently working as a freelance, but I am always open to new opportunities, so don't hesitate to contact me.I am open to relocate."
               subHeader="looking for a developer?"/>
             }
             />

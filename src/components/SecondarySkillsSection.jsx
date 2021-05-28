@@ -3,7 +3,7 @@ import React from 'react'
 export default function SecondarySkillsSection(){
    const skillsIconsLeft = [
       { id:1, name:'GraphQL',class:'font-bold' },
-      { id:2, name:'React Router', class:'font-bold' },
+      { id:2, name:'Python', class:'font-bold' },
       { id:3, name:'Redux', class:'font-bold' },
       { id:4, name:'Sass', class:'font-bold' },
       { id:5, name:'Responsive Design', class:'font-bold' }

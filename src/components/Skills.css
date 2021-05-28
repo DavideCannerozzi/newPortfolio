@@ -41,4 +41,8 @@
       border-left:transparent;
       border-right:transparent
    }
+   .main-skills > ul > li{
+      display:block;
+      margin-top:1rem
+   }
 }

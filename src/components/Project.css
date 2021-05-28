@@ -8,6 +8,14 @@
    border-bottom:10px solid transparent;
 }
 
+.project-description_p span{
+   background-color:#dc9b16;
+   padding:1rem;
+   color:white;
+   text-transform: capitalize;
+}
+
+
 @media (max-width:768px){
    .project-container{
       border-left:transparent;
