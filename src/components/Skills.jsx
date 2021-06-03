@@ -13,7 +13,7 @@ export default function Skills(props) {
             <h2 className="text-center text-4xl p-2">{props.header}</h2>
             <MainSkills />
             <SecondarySkillsSection />
-            <LanguageSkillsSection header="Languages Spoken" />
+            <LanguageSkillsSection header="Languages" />
          </div>
       </div>
    )

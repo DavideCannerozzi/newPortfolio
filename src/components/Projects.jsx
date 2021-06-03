@@ -14,7 +14,7 @@ export default function Projects(props) {
 
    const Projects = [
       { image:SeteShopImg, title:'Freelance Client | SeteShop', content:'An E-commerce for a client based in Italy', alt:"seteShop", skills:'Wordpress | Javascript | CSS3', website:"https://www.seteshop.it/"},
-      { image:MachwerkImg, title:'Machwerk Website Berlin,Germany', content:'Machwerk Is A Website', skills:'React.js | GraphQL | TailwindCss | ContentfulCMS', website:"https://machwerk.berlin/de/"},
+      { image:MachwerkImg, title:'Machwerk Website Berlin,Germany', content:'Machwerk Is A Website for a co-working space in Berlin,Germany', skills:'React.js | GraphQL | TailwindCss | ContentfulCMS', website:"https://machwerk.berlin/de/"},
       { image:VueTemplateImg, title:'A Template For Photographers', content:'A Simple And Clean Template For Photographers', skills:'Vue.js | Vuetify', website:"https://photo-portfolio-vue.netlify.app/", code:"https://github.com/DavideCannerozzi/PhotoPortfolio"},
       { image:PongImg, title:'Pong Game Python', content:'The famous Pong game made with Python and Turtle.py ', skills:'Python', code:"https://github.com/DavideCannerozzi/PongGame"},
       { image:JewelryTemplateImg, title:'jewelry Template', content:'A Clean Template For Your Jewelry Shop', skills:'Bootstrap 4 | SASS', code:'https://github.com/DavideCannerozzi/Jewelry-Template'},
