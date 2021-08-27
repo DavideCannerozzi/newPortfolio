@@ -26,9 +26,9 @@ export default function Projects(props) {
       <div className="text-center absolute w-full">
          <h2 className="text-4xl p-2">{props.header}</h2>
          <p>{props.subHeader}</p> 
-         <a className="block w-1/4 mx-auto capitalize rounded-full border-2 py-2 mt-6" href="https://github.com/DavideCannerozzi" target="_blank" rel="noreferrer"><i class="fab fa-github mr-2"></i>{props.btnGithub}</a>
+         <a className="block md:w-1/4 w-4/6 mx-auto capitalize border-2 py-2 mt-6" href="https://github.com/DavideCannerozzi" target="_blank" rel="noreferrer"><i class="fab fa-github mr-2"></i>{props.btnGithub}</a>
          <Bar />
-         <div className="project-container p-8">
+         <div className="project-container md:p-8">
            { Projects.map( project =>(<SingleProject image={project.image} title={project.title} content={project.content} skill={project.skills} alt={props.alt} linkWeb={project.website} code={project.code}/> )  )}
          </div>
       </div>

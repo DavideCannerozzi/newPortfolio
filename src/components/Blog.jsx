@@ -4,9 +4,9 @@ import SinglePost from './singlePost'
 
 export default function Blog(props) {
    const articles = [
-      { category:"css", description:"how to center a div with flexbox", link:"https://codingandbeers.com/flexbox-center-a-div/",icon:"fab fa-2x fa-css3-alt"},
+      { category:"react", description:"The useState Hook", link:"https://codingandbeers.com/usestate-hook-in-react/", icon:"fab fa-2x fa-react"},
       { category:"react", description:"set up a react project with create-react-app", link:"https://codingandbeers.com/create-react-app/", icon:"fab fa-2x fa-react"},
-      { category:"react", description:'The useState() Hook', link:"https://codingandbeers.com/usestate-hook-in-react/",icon:"fab fa-2x fa-react" },
+      { category:"css", description:"how to center a div with flexbox", link:"https://codingandbeers.com/flexbox-center-a-div/",icon:"fab fa-2x fa-css3-alt"}
    ]
 
    return (
